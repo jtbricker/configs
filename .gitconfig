@@ -18,3 +18,7 @@
 	cma = !git add -A && git commit --amend
 	cr = "!git push origin $(git branch-name):refs/for/develop/$2"
 	st = status
+
+[http]
+        sslVerify = false
+        sslCAinfo = /bin/curl-ca-bundle.crt

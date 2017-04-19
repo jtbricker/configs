@@ -1,0 +1,14 @@
+.astropy/
+.bash_history
+.conda/
+.erlang.cookie
+.heroku/
+.ipython/
+.jupyter/
+.matplotlib/
+.mongorc.js
+.profile
+.ssh/
+.viminfo
+LiveCycle-Templates/
+pip/
