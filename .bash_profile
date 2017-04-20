@@ -28,6 +28,8 @@ alias wa="cd /c/src/IEI.CustomerWeb.WebAccount"
 #########  GIT HELPERS  ###############
 alias gitalias="edit ~/.gitconfig"
 alias bclean='git branch | grep -v "master" | grep -v "develop" | xargs git branch -D '
+alias dev='git checkout develop'
+alias devup='git checkout develop && git pull'
 
 #####################################################
 ####################   GIT   ########################
