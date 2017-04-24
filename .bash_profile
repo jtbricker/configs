@@ -32,6 +32,21 @@ alias dev='git checkout develop'
 alias devup='git checkout develop && git pull'
 
 #####################################################
+##################   FUNCS     ######################
+#####################################################
+function push() {
+    if [ $# -eq 0 ]
+    then
+        echo "Usage: push TAG_NAME"
+        echo "=====Executes: git push origin CURRENT_GIT_BRANCH:refs/for/develop/TAG_NAME"
+        return
+    fi
+    TAG=$1
+    CURR_BRANCH=`git branch | grep \* | cut -d ' ' -f2`
+    echo "git push origin $CURR_BRANCH:refs/for/develop/$TAG"
+}
+
+#####################################################
 ####################   GIT   ########################
 #####################################################
 # Setup to Use NPM behind the WSA
